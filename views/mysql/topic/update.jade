@@ -1,0 +1,19 @@
+extends ../layout
+block content
+	artcle
+		form(action='/topic/update/'+title  method='post')
+			p 
+				input(type='text' name='title' value=title)
+				input(type='hidden' name='id' value=id)
+			p 
+				textarea(name='description')= description
+			p 
+				select(name='authorId')
+					-for (var i = 0; i < authors.length; i++)
+						if author_id == authors[i].id
+							option(value="#{authors[i].id}" selected) #{authors[i].name}
+						else 
+							option(value="#{authors[i].id}") #{authors[i].name}
+			p 
+				input(type='submit' value='Update')
+					

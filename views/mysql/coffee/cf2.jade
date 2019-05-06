@@ -1,0 +1,55 @@
+doctype html
+html
+  head
+    //link(href='style.css', rel='stylesheet', type='text/css')
+    style
+      include style2.css
+  body
+    .container
+      header
+        nav
+          ul#main-nav
+            li
+              a(href='/coffee') Home
+            li
+              a(href='/coffee') About
+            li
+              a(href='/coffee') Menu
+            li
+              a(href='/coffee') Reservation
+            li
+              a(href='/coffee') Gallery
+            li
+              a(href='/coffee') Contact
+            li
+              a(href='#events') Upcoming events
+      section#events
+        .page_title
+          h3 Upcoming events
+        .content
+          .photo
+            img(src='https://proxy.goorm.io//service/5cb014c898d417537a6cedd2_dyvcphvbnlahgpatgdd.run.goorm.io/9080//file/load/baristar.jpg?path=d29ya3NwYWNlJTJGbm9kZWpzJTJGV2ViYXBwLW15c3FsJTJGdmlld3MlMkZteXNxbCUyRmNvZmZlZSUyRmltYWdlcyUyRmJhcmlzdGFyLmpwZw==&docker_id=dyvcphvbnlahgpatgdd&secure_session_id=hEUV2ijthK5X6D2BNWbvAUaet4mzdDPM', ,='',width='600', height='380', alt='')
+          .text
+            p  class time: 7pm - 8pm
+            p
+              | closed: Every Wednesday (
+              i
+                small If Wednesday is holiday, nextday is closed.
+              | )
+      section#roast
+        .page_title
+          h3 Today's Roast
+        .content
+          .photo
+            img(src='https://proxy.goorm.io//service/5cb014c898d417537a6cedd2_dyvcphvbnlahgpatgdd.run.goorm.io/9080//file/load/coffee.jpg?path=d29ya3NwYWNlJTJGbm9kZWpzJTJGV2ViYXBwLW15c3FsJTJGdmlld3MlMkZteXNxbCUyRmNvZmZlZSUyRmltYWdlcyUyRmNvZmZlZS5qcGc=&docker_id=dyvcphvbnlahgpatgdd&secure_session_id=hEUV2ijthK5X6D2BNWbvAUaet4mzdDPM', ,='', width='600', height='382', alt='Espresso coffee')
+          .text
+            h4  Espresso coffee
+            ol
+              li Wipe the portafilter with a clean, dry cloth. 
+              li Dose the coffee grounds into the portafilter. 
+              li Level the dose and tamp it evenly. 
+              li Flush the group head. 
+              li Attach the portafilter and immediately start the brewing. 
+              li Flush the group head. Place the cups below the portafilter spouts. Enjoy! 
+      footer
+        p#footer Contact Us

@@ -1,0 +1,15 @@
+extends ../layout
+block content
+	div 
+		a(href='/topic/add') 
+			button(type="button") Create new post
+	div 	
+		a(href='/topic/update/'+title)
+			button(type="button") Modify 
+	div 
+		form(action='/topic/delete/'+title method='post')
+			button(type="submit") Delete
+	artcle
+		h2= title
+		= description 
+		p by #{name} 

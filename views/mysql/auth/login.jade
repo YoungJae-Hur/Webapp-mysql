@@ -1,0 +1,15 @@
+<!--this is view-->
+
+html
+	head
+		meta(charset='utf-8')
+	body
+		h1 Login
+		form(action='/auth/login', method='post')
+			p
+				input(type='text', name='username', placeholder='username')
+			p
+				input(type='password', name='password', placeholder='password')
+			p
+				input(type='submit', value='Submit')
+		a(href='/auth/facebook') Login with Facebook
